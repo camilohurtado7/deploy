@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/estiloc.css">
+    <link rel="stylesheet" href="/assets/css/estilo.css">
+    <link href="/assets/css/estilos.css" rel="stylesheet">
+
+    <!-- Custom JavaScript -->
+    <script src="/assets/js/app.js" async></script>
+    <script src="/assets/js/sesion.js" async></script>
+
+    <title>Cosmeticos Beauty</title>
+</head> 
+<body>
+    <header>
+        <!-- Intro settings -->
+        <style>
+          /* Default height for small devices */
+          #intro-example {
+            height: 400px;
+          }
+      
+          /* Height for devices larger than 992px */
+          @media (min-width: 992px) {
+            #intro-example {
+              height: 600px;
+            }
+          }
+        </style>
+      
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="/assets/img/logo.webp" alt="Logo" width="170" height="90" class="d-inline-block align-text-top">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex ms-auto pink-border">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-primary pink-btn" type="submit">
+                      <i class="fas fa-search"></i>
+                  </button>
+              </form>
+              <script>
+                function searchFunction() {
+                    const input = document.getElementById('search-input');
+                    const searchTerm = input.value.trim();
+        
+                    if (searchTerm) {
+                        alert(`You searched for: ${searchTerm}`);
+                        // Add your custom search logic here.
+                    } else {
+                        alert('Please enter a search term.');
+                    }
+                }
+            </script>
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="/" style="color: #ff69b4;">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#TESTIMONIOS" style="color: #ff69b4;">| TESTIMONIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/nosotros.html" style="color: #ff69b4;">| NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#CONTACTENOS" style="color: #ff69b4;">| CONTACTENOS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/carrito.html" style="color: #ff69b4;">
+                          <i class="fas fa-shopping-cart"></i> Catalogo
+                      </a>
+                  </li>
+                    <!-- Agregar un enlace con un ícono para la página de cierre de sesión -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #ff69b4;">
+                            <i class="fas fa-user"></i>
+                            <span id="username" style="margin-left: 5px;"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="logoutLink" onclick="logout()" style="color: #ff69b4;">Cerrar Sesión</a>
+                    </li>
+                    <!-- Agregar un enlace con un ícono para la página de inicio de sesión -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login" id="loginLink" style="color: #ff69b4;">
+                            <i class="fas fa-user"></i> Login
+                        </a>
+                    </li>
+                </ul>
+              </div>
+          </div>
+      </nav>
+<div 
+id="intro-example"
+class="p-5 text-center bg-image"
+style="background-image: url(https://raspberrymag.com/wp-content/uploads/2020/09/cosmeticos-maquillaje-e1571597050506.jpg);"
+>
+<div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <div class="text-white" id="INICIO">
+      <h1 class="mb-3">COSMETICOS BEAUTY</h1>
+      <h5 class="mb-4">Lo mejor en belleza para ti</h5>
+      <a
+        data-mdb-ripple-init
+        class="btn btn-outline-light btn-lg m-2"
+        href="https://www.youtube.com/watch?v=K6Fxzcp1Z4Q"
+        role="button"
+        rel="nofollow"
+        target="_blank"
+        style="transition: all 0.3s ease-in-out; color: #ff69b4;"
+      >Aprende a maquillarte</a
+      >
+      <a
+        data-mdb-ripple-init
+        class="btn btn-outline-light btn-lg m-2"
+        href="https://maquillajetrendyshop.com/"
+        target="_blank"
+        role="button"
+        style="transition: all 0.3s ease-in-out; color: #ff69b4;" 
+      >Tiendas aliadas</a
+      >
+    </div>
+  </div>
+</div>
+</div>
+<!-- Background image -->
+
+        <!-- Background image -->
+      </header>
+ <br>
+      <br>
+      <div class="row" style="display: flex; justify-content: center; margin-top: 30px; text-align: center;" id="NOSOTROS">
+        <div class="col-sm-2">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/assets/img/4.jpg" alt="" class="img-fluid rounded-circle">
+                    <h5 class="card-title">Camilo Hurtado</h5>
+                    <p class="card-text">"Software Architect"</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/assets/img/5.jpg" alt="" class="img-fluid rounded-circle">
+                    <h5 class="card-title">Yeison Loaiza</h5>
+                    <p class="card-text">"DBA"</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/assets/img/3.jpg" alt="" class="img-fluid rounded-circle">
+                    <h5 class="card-title">Lorena Téllez</h5>
+                    <p class="card-text">"Community manager"</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/assets/img/2.jpg" alt="" class="img-fluid rounded-circle">
+                    <h5 class="card-title">Juan Felipe Pinzon Lopez</h5>
+                    <p class="card-text">"Data Analyst"</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/assets/img/1.jpeg" alt="" class="img-fluid rounded-circle">
+                    <h5 class="card-title">Erik Vasquez</h5>
+                    <p class="card-text">"Project Manager"</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+      <br>
+      <br>
+      <br>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>   
+      </div> 
+      <br> 
+      <br>
+      <footer class="bg-body-tertiary text-center">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0" >
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Botones de redes sociales -->
+            <!-- Facebook -->
+            <a
+            data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <!-- Google -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </section>
+          <!-- Sección: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Derechos de autor -->
+        <div class="text-center p-3" style="background-color: #1d1b1c;color: #ff69b4;">
+          © 2020 Cosmeticos Beauty. Todos los derechos reservados.<br> 
+        </div>
+        <!-- Derechos de autor -->
+      </footer>
+</body>
+</html>

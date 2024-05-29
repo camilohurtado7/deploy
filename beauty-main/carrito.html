@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+        <!-- MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+    
+        <!-- SweetAlert2 -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/assets/css/estiloc.css">
+        <link rel="stylesheet" href="/assets/css/estilo.css">
+    
+        <!-- Custom JavaScript -->
+        <script src="/assets/js/app.js" async></script>
+
+        <title>Cosmeticos Beauty</title>
+    </head>    
+<body>
+    <!--Inicio de la sección de encabezado de la página.-->
+    <header>
+        <!-- Intro settings -->
+        <style>
+          /* Default height for small devices */
+          #intro-example {
+            height: 400px;
+          }
+      
+          /* Height for devices larger than 992px */
+          @media (min-width: 992px) {
+            #intro-example {
+              height: 600px;
+            }
+          }
+        </style>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="/assets/img/logo.webp" alt="Logo" width="170" height="90" class="d-inline-block align-text-top">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex ms-auto pink-border">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-primary pink-btn" type="submit">
+                      <i class="fas fa-search"></i>
+                  </button>
+              </form>
+              <script>
+                function searchFunction() {
+                    const input = document.getElementById('search-input');
+                    const searchTerm = input.value.trim();
+        
+                    if (searchTerm) {
+                        alert(`You searched for: ${searchTerm}`);
+                        // Add your custom search logic here.
+                    } else {
+                        alert('Please enter a search term.');
+                    }
+                }
+            </script>
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="/" style="color: #ff69b4;">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#TESTIMONIOS" style="color: #ff69b4;">| TESTIMONIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/nosotros.html" style="color: #ff69b4;">| NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#CONTACTENOS" style="color: #ff69b4;">| CONTACTENOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/carrito.html" style="color: #ff69b4;">
+                            <i class="fas fa-shopping-cart"></i> Catalogo
+                        </a>
+                    </li>
+                    <!-- Agregar un enlace con un ícono para la página de cierre de sesión -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #ff69b4;">
+                            <i class="fas fa-user"></i>
+                            <span id="username" style="margin-left: 5px;"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="logoutLink" onclick="logout()" style="color: #ff69b4;">Cerrar Sesión</a>
+                    </li>
+                    <!-- Agregar un enlace con un ícono para la página de inicio de sesión -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login" id="loginLink" style="color: #ff69b4;">
+                            <i class="fas fa-user"></i> Login
+                        </a>
+                    </li>
+                </ul>
+              </div>
+          </div>
+      </nav>
+      <div id="intro-example" class="p-5 text-center bg-image" 
+style="background-image: url(https://raspberrymag.com/wp-content/uploads/2020/09/cosmeticos-maquillaje-e1571597050506.jpg);">
+<div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <div class="text-white" id="INICIO">
+      <h1 class="mb-3">COSMETICOS BEAUTY</h1>
+      <h5 class="mb-4">Lo mejor en belleza para ti</h5>
+    </div>
+  </div>
+</div>
+</div>
+      </header>
+    <!--Inicio de una sección con la clase "contenedor".-->
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <!-- Inicio de un elemento en el contenedor.-->
+            <div class="item">
+                <span class="titulo-item">Box Engasse</span>
+                <img src="/assets/img/carrito/sombras.png" alt="" class="img-item">
+                <span class="precio-item">$15.000</span>
+            </div>
+            <div class="item">
+                <span class="titulo-item">English Horse</span>
+                <img src="/assets/img/carrito/cejas.png" alt="" class="img-item">
+                <span class="precio-item">$25.000</span>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Knock Nap</span>
+                <img src="/assets/img/carrito/corrector.png" alt="" class="img-item">
+                <span class="precio-item">$35.000</span>
+            </div>
+            <div class="item">
+                <span class="titulo-item">La Night</span>
+                <img src="/assets/img/carrito/gloss.png" alt="" class="img-item">
+                <span class="precio-item">$18.000</span>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Silver All</span>
+                <img src="/assets/img/carrito/pngegg (1).png" alt="" class="img-item">
+                <span class="precio-item">$32.000</span>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Skin Glam</span>
+                <img src="/assets/img/carrito/pngegg (2).png" alt="" class="img-item">
+                <span class="precio-item">$18.000</span>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Midimix</span>
+                <img src="/assets/img/carrito/pngegg (3).png" alt="" class="img-item">
+                <span class="precio-item">$54.000</span>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Sir Blue</span>
+                <img src="/assets/img/carrito/pngegg.png" alt="" class="img-item">
+                <span class="precio-item">$32.000</span>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Middlesteel </span>
+                <img src="/assets/img/carrito/polvos.png" alt="" class="img-item">
+                <span class="precio-item">$42.800</span>                
+            </div>
+            <div class="item">
+                <span class="titulo-item">Esponja maquilladora</span>
+                <img src="/assets/img/carrito/Esponja.jpg" alt="" class="img-item">
+                <span class="precio-item">$15.900</span>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Raspacallo</span>
+            <img src="/assets/img/carrito/Raspacallo.jpg" alt="" class="img-item">
+            <span class="precio-item">$10.000</span>
+    </div>
+    <div class="item">
+        <span class="titulo-item">Rubor beauty</span>
+        <img src="/assets/img/carrito/Rubor.png" alt="" class="img-item">
+        <span class="precio-item">$15.000</span>
+</div>
+<div class="item">
+    <span class="titulo-item">Water of roses 210ml</span>
+    <img src="/assets/img/carrito/agua-belgrows.png" alt="" class="img-item">
+    <span class="precio-item">$30.000</span>
+</div>
+<div class="item">
+    <span class="titulo-item">Enamel Vino tinto</span>
+    <img src="/assets/img/carrito/esmalte.png" alt="" class="img-item">
+    <span class="precio-item">$8.900</span>
+</div>
+<div class="item">
+    <span class="titulo-item">Perfume Pink Love</span>
+    <img src="/assets/img/carrito/pink love.png" alt="" class="img-item">
+    <span class="precio-item">$44.900</span>
+</div>
+<div class="item">
+    <span class="titulo-item">Pestañas Star Series</span>
+    <img src="/assets/img/carrito/Pestañas .png" alt="" class="img-item">
+    <span class="precio-item">$12.900</span>
+</div>
+<div class="item">
+    <span class="titulo-item">Cosmetiquera Beauty</span>
+    <img src="/assets/img/carrito/cosmetiquera.png" alt="" class="img-item">
+    <span class="precio-item">$19.900</span>
+</div>
+<div class="item">
+    <span class="titulo-item">Base de maquillaje</span>
+    <img src="/assets/img/carrito/base.jpg" alt="" class="img-item">
+    <span class="precio-item">$20.900</span>
+</div>
+<div class="item">
+    <span class="titulo-item">Spray Fijador Beauty</span>
+    <img src="/assets/img/carrito/Fijador.png" alt="" class="img-item">
+    <span class="precio-item">$30.900</span>
+</div>
+<div class="item">
+    <span class="titulo-item">Rice water Beautyfull</span>
+    <img src="/assets/img/carrito/Agua de arroz.png" alt="" class="img-item">
+    <span class="precio-item">$35.000</span>
+</div>
+        </div>
+
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items"> 
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+        <footer class="bg-body-tertiary text-center">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Botones de redes sociales -->
+                <!-- Facebook -->
+                <a
+                data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #3b5998;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <!-- Google -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #dd4b39;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-google"></i
+                ></a>
+          
+                <!-- Instagram -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #ac2bac;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+          
+                <!-- Linkedin -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #0082ca;"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </section>
+              <!-- Sección: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Derechos de autor -->
+            <div class="text-center p-3" style="background-color: rgb(0, 0, 0);">
+              <p style="color: #ff69b4;"> © 2020 Cosmeticos Beauty. Todos los derechos reservados.</p>
+            </div>
+            <!-- Derechos de autor -->
+          </footer>
+                  <!-- Custom JavaScript -->
+        <script src="/assets/js/app.js" async></script>
+</body>
+</html>

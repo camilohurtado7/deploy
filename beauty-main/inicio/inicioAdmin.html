@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Administrador</title>
+    <!-- Enlaces a los estilos de Bootstrap y MDB -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdb-ui-kit/css/mdb.min.css">
+    <style>
+        /* Estilos para el encabezado */
+        .header {
+            background-color: #000;
+            color: #ff8fc7;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para el botón de ocultar/mostrar */
+        #toggleSidebar {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #ff8fc7;
+            cursor: pointer;
+        }
+
+        /* Estilos para la barra lateral */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px; /* Ocultar por defecto */
+            background-color: #111;
+            padding-top: 20px;
+            transition: left 0.3s ease-in-out; /* Transición suave */
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #ff8fc7;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #333;
+        }
+
+        /* Estilos para el contenido */
+        .content {
+            margin-left: 0; /* Ajustar margen cuando el panel está oculto */
+            padding: 20px;
+            transition: margin-left 0.3s ease-in-out; /* Transición suave */
+        }
+
+        /* Estilos para el pie de página */
+        .footer {
+            background-color: #ff8fc7; /* Cambiado a tono rosado */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <div class="header">
+        <h2>Dashboard de Administrador</h2>
+        <!-- Botón para ocultar/mostrar la barra lateral -->
+        <span id="toggleSidebar">&#9776;</span>
+    </div>
+
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <a href="/views/perfiles">Perfiles</a>
+        <a href="/views/productos">Productos</a>
+        <a href="/views/usuarios">Usuarios</a>
+    </div>
+
+    <!-- Contenido -->
+    <div class="content">
+        <h1 class="mt-5">Bienvenido al Dashboard de Administrador</h1>
+        <!-- Aquí puedes agregar contenido adicional según sea necesario -->
+    </div>
+
+    <!-- Pie de página -->
+    <div class="footer">
+        <p>© 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </div>
+
+    <!-- Scripts de Bootstrap y MDB -->
+    <script>
+        // Función para ocultar/mostrar la barra lateral al hacer clic en el botón
+        document.getElementById('toggleSidebar').addEventListener('click', function() {
+            var sidebar = document.querySelector('.sidebar');
+            var content = document.querySelector('.content');
+            if (sidebar.style.left === '0px') {
+                sidebar.style.left = '-250px';
+                content.style.marginLeft = '0';
+            } else {
+                sidebar.style.left = '0px';
+                content.style.marginLeft = '250px';
+            }
+        });
+    </script>
+</body>
+
+</html>

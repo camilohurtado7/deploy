@@ -1,0 +1,100 @@
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #89004f, #c33b80, #ff69b4, #ffa8d9);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right,#89004f, #c33b80, #ff69b4, #ffa8d9);
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+    .pink-btn {
+        background-color: #ff69b4; /* or any other pink shade you prefer */
+        border-color: #ff69b4;
+        color: #FFFFFF; /* white text color to contrast with the pink background */
+        transition: background-color 0.3s ease, color 0.3s ease; /* optional: add a smooth transition effect */
+      }
+      
+      .pink-btn:hover {
+        background-color: #FFFFFF;
+        color: #ff69b4;
+      }
+      .navbar-brand {
+        margin-left: 0;
+      }
+      
+      .navbar-nav {
+        margin-right: 0;
+      }
+      
+      .form-control {
+        width: 300px;
+      }
+      .custom-form {
+        margin-bottom: 20px; /* Ajusta el margen inferior del formulario */
+    }
+    .custom-btn {
+        margin-top: 10px; /* Ajusta el margen superior del botón */
+    }
+    .custom-form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .custom-form label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      .custom-form input,
+      .custom-form textarea {
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 15px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      .custom-form textarea {
+        resize: vertical;
+      }
+      
+      .custom-btn {
+        margin-top: 15px;
+      }
+      .login-link:hover {
+        color: #ff69b4; 
+    }
+  input[type="search"]:focus {
+      outline: none;
+      border-color: #ff8fc7; /* Color del borde cuando está enfocado */
+      box-shadow: 0 0 0 0.25rem rgba(255, 143, 199, 0.25); /* Efecto de sombra */
+  }
+  .testimonial-card:hover {
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5); /* Tonos de rosa (#ff69b4) con opacidad del 50% */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .img-fluid {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
